@@ -1,0 +1,45 @@
+@media #{$mobile} {
+    .footer {
+        text-align: center;
+        position: static;
+        &-logo {
+            display: block;
+            float: none;
+            margin: 0 auto 20px;
+        }
+        &-menu {
+            display: block;
+            float: none;
+            margin-bottom: 10px;
+            li {
+                display: inline-block;
+                float: none;
+                margin: 0 20px 10px 0;
+            }
+        }
+        &-download {
+            display: block;
+            float: none;
+            text-align: center;
+        }
+        &-line {
+            display: none;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .footer {
+        position: static;
+        text-align: center;
+        &-line {
+            display: none;
+        }
+        &-logo,
+        &-menu,
+        &-download {
+            display: inline-block;
+            float: none;
+        }
+    }
+}

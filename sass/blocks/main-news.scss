@@ -1,0 +1,37 @@
+@media #{$mobile} {
+    .main-news {
+        .all-news-btn {
+            margin-bottom: 10px;
+        }
+    padding-top: 50px;
+    .news-arrows {
+	    right: 10px;
+    }
+    .news-on-main {
+        .new {
+            display: block;
+            float: none;
+            width: auto;
+            padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media #{$tablet} {
+    .main-news {
+        padding: 30px 0 0 20px;
+        .news-arrows {
+            right: 20px;
+        }
+        .news-on-main {
+            .new {
+                width: 30%;
+                margin-right: 30px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        } 
+    }
+}

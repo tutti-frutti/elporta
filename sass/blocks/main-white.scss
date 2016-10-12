@@ -1,0 +1,25 @@
+@media #{$mobile} {
+    .main-white {
+        text-align: center;
+    .container {
+        max-width: 951px;
+    }
+    .white-category {
+        display: inline-block;
+        float: none;
+        margin-right: 0;
+        border-right: none;
+        padding: 20px;
+    }
+  }
+}
+
+@media #{$tablet} {
+    .main-white {
+        text-align: center;
+    }
+    .white-category {
+        display: inline-block;
+        float: none;
+    }
+}

@@ -1,6 +1,11 @@
 //@import "mixins.scss";
-//@import "variables.scss";
+@import "variables.scss";
 
+@import "blocks/main-black.scss";
+@import "blocks/main-white.scss";
+@import "blocks/main-gray.scss";
+@import "blocks/main-news.scss";
+@import "blocks/footer.scss";
 //@import "blocks/...";
 
 @import "global/scaffolding.scss";

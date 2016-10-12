@@ -1,0 +1,76 @@
+@media #{$mobile} {
+    .main-black {
+        height: auto;
+        overflow: visible;
+        .container {
+            max-width: 951px;
+        }
+        .main-header {
+            padding-top: 10px;
+            .phone,
+            .logo,
+            .download {
+                float: none;
+                width: auto;
+                text-align: center;
+            }
+            .phone {
+                padding: 15px 0;
+            }
+        }
+        .left,
+        .right {
+            float: none;
+            width: auto;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .right {
+            display: block;
+        }
+        .main-menu {
+            width: auto;
+            text-align: center;
+            ul {
+                li {
+                    display: inline-block;
+                    float: none;
+                    margin: 0 5px 10px 5px;
+                }
+                li.devider {
+                    width: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .main-black {
+        .phone {
+            width: 30%;
+            padding-left: 10px;
+        }
+        .download {
+            float: right;
+            width: 30%;
+            padding-right: 10px;
+            
+        }
+        .left {
+            width: 47%;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: left;
+        }
+        .right {
+            position: relative;
+            img {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
