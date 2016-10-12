@@ -75,11 +75,11 @@ module.exports = function (grunt) {
 
         watch: {
             bake: {
-                files: ["app/*.html"],
+                files: ["app/*.htm"],
                 tasks: ["bake:build"]
             },
                     html: {
-//                        files: ["*.htm"],
+                        files: ["*.html"],
 //                        tasks: ["copy:html"]
                     },
 
@@ -101,7 +101,7 @@ module.exports = function (grunt) {
                     "img/**",
                     "js/**",
                     "css/**",
-                    "*.htm"
+                    "*.html"
                 ],
                     dest: "build"
             }]
@@ -109,7 +109,7 @@ module.exports = function (grunt) {
             html: {
                 files: [{
                     expand: true,
-                    src: ["*.htm"],
+                    src: ["*.html"],
                     dest: "build"
             }]
             }
