@@ -1,0 +1,53 @@
+@media #{$mobile} {
+    .wrapper {
+        .h2 {
+            text-align: center;
+        }
+    }
+    .header {
+        padding-top: 10px;
+        .phone,
+        .logo,
+        .download {
+            float: none;
+            width: auto;
+            text-align: center;
+        }
+        .phone {
+            padding: 15px 0;
+        }
+        &-menu {
+            margin-top: 20px;
+            ul {
+                li {
+                    display: inline-block;
+                    float: none;
+                    margin: 0 10px 10px 10px;
+                }
+                li.devider {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .wrapper {
+        .h2 {
+            text-align: center;
+        }
+    }
+    .header {
+        .phone {
+            width: 30%;
+            padding-left: 10px;
+        }
+        .download {
+            float: right;
+            width: 30%;
+            padding-right: 10px;
+            
+        }
+    }
+}

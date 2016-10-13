@@ -1,0 +1,27 @@
+@media #{$mobile} {
+    .categories-products {
+        .line {
+            text-align: center;
+            .product {
+                display: inline-block;
+                float: none;
+                margin: 0 5px 40px;
+                text-align: left;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .categories-products {
+        .line {
+            text-align: center;
+            .product {
+                display: inline-block;
+                float: none;
+                margin: 0 5px 40px;
+                text-align: left;
+            }
+        }
+    }
+}

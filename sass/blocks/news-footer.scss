@@ -1,0 +1,52 @@
+@media #{$mobile} {
+    .news-footer {
+        text-align: center;
+        form {
+            display: block;
+            float: none;
+            margin-bottom: 15px;
+        }
+        .subscribe-text,
+        input,
+        button {
+            float: none;
+        }
+        .subscribe-text {
+            margin-bottom: 10px;
+        }
+        input {
+            margin-right: 0;
+        }
+    }
+    .pagination {
+	    float: none;
+        span {
+            margin-right: 0;
+            font-size: 12px;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .news-footer {
+        padding: 0 20px;
+        text-align: center;
+        form {
+            display: block;
+            float: none;
+            margin-bottom: 15px;
+            height: 38px;
+            .subscribe-text,
+            input,
+            button {
+                display: inline-block;
+                float: none;
+            }
+        }
+    }
+    
+    .pagination {
+        display: block;
+        float: none;
+    }
+}

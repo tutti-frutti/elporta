@@ -1,0 +1,29 @@
+@media #{$mobile} {
+    .news {
+        .border {
+            margin: 0;
+            height: 0;
+        }
+        .news-table {
+            td {
+                display: block;
+                width: auto;
+                padding: 0 20px;
+            }
+            .new {
+                .date {
+                    margin-top: 20px;
+                }
+                .title {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .news {
+	    padding: 0 20px;
+    }
+}

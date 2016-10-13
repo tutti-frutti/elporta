@@ -1,0 +1,20 @@
+@media #{$mobile} {
+    .contacts-table {
+        td {
+            display: block;
+            width: auto!important;
+            .ymaps-2-1-44-map {
+                width: auto!important;
+            }
+            #ymaps1476369267386780598 {
+                width: auto!important;
+            }
+            #ymaps1476369267419426704 {
+                width: auto!important;
+            }
+            &:first-child {
+                padding-right: 0;
+            }
+        }
+    }
+}

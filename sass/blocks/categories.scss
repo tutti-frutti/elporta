@@ -1,0 +1,23 @@
+@media #{$mobile} {
+    .categories {
+        &-line {
+            &:last-child {
+                .category {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        margin-top: 30px;
+        .category {
+            margin: 0 30px 30px;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .categories {
+        .category {
+            margin: 0 30px 30px;
+        }
+    }
+}
