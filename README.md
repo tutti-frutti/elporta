@@ -21,3 +21,8 @@ static web to adaptive web
 - viewport для адаптивного сайта: <meta name="viewport" content="width=device-width, initial-scale=1">
 
 - в проекте для новостей используется таблица. для того, чтобы адаптировать это для нужных td я задал display: block; это помогло "сбросить" режим ячеей и соответственно перестроить эти блоки.
+
+- adaptive  для страницы товара
+    http://localhost:3000/catalog/dveri-3d-graf/seriya-porta-x/porta-21-3d-grey.htm
+- adaptive  для страницы каталога 
+    http://localhost:3000/catalog/dveri-3d-graf/seriya-porta-x-1.htm

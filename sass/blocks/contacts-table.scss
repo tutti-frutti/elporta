@@ -1,20 +1,38 @@
 @media #{$mobile} {
     .contacts-table {
+        margin: 31px auto 38px;
+        text-align: center;
         td {
             display: block;
-            width: auto!important;
-            .ymaps-2-1-44-map {
-                width: auto!important;
-            }
-            #ymaps1476369267386780598 {
-                width: auto!important;
-            }
-            #ymaps1476369267419426704 {
-                width: auto!important;
-            }
+            width: auto;
             &:first-child {
-                padding-right: 0;
+                padding-right: 10px;
             }
+        }
+        ymaps {
+            max-width: 320px;
+            margin: auto;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .contacts-table {
+        margin: 31px auto 38px;
+        text-align: center;
+        td {
+            display: block;
+//            width: 50%;
+//            width: 380px!important;
+            &:first-child {
+                padding-right: 10px;
+            }
+        }
+        ymaps {
+//            width: 100%!important;
+        }
+        ymaps.ymaps-2-1-44-map {
+//            width: 380px!important;
         }
     }
 }

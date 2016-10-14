@@ -1,0 +1,38 @@
+@media #{$mobile} {
+    .next-prev-products {
+        text-align: center;
+        .prev {
+            position: static;
+            margin-left: 0;
+            margin-bottom: 15px;
+            border: 2px solid #d1d1d1;
+            &::before {
+                content: none;
+            }
+            &::after {
+                content: none;
+            }
+        }
+        .next {
+            position: static;
+            margin-right: 0;
+            border: 2px solid #d1d1d1;
+            &::before {
+                content: none;
+            }
+            &::after {
+                content: none;
+            }
+        }
+    }
+    .block-heading {
+        .breadcrumb {
+            padding: 0 10px;
+            margin-bottom: 10px;
+            li {
+                display: inline-block;
+                float: none;
+            }
+        }
+    } 
+}

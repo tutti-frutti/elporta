@@ -1,0 +1,82 @@
+@media #{$mobile} {
+    .product-inner {
+        text-align: center;
+        margin-bottom: 30px;
+        .product-left {
+            display: block;
+            float: none;
+            width: auto;
+        }
+        .product-right {
+            display: block;
+            float: none;
+            width: auto;
+            .similar {
+                width: auto;
+	        .similar-outer {
+                width: auto;
+                .similar-inner {
+                    margin: 10px auto 0;
+                }
+            }
+        }
+        .similar-border {
+                width: auto;
+            }
+                        
+        }
+    }
+    .similar-selects {
+        .selectbox {
+            display: inline-block;
+	        float: none;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 0!important;
+        }
+    }
+    .product-table {
+        width: auto;
+        .product-tab {
+            padding-left: 5px;
+        }
+        .product-specs {
+            .question {
+	            right: -20px;
+            }
+            .question-wrapper {
+                padding-left: 5px;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+    .product-inner {
+        .product-left {
+            width: 24%;
+            padding: 0 10px;
+        }
+        .product-right {
+            width: 73%;
+            .similar {
+	            width: auto;
+            }
+            .similar-border {
+                width: auto;
+            }
+            .product-table {
+                width: auto;
+            }
+        }
+    }
+    .similar-selects {
+        .selectbox {
+            display: inline-block;
+	        float: none;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 0!important;
+        }
+    }
+}

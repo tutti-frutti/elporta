@@ -1,0 +1,37 @@
+@media #{$tablet} {
+    .dillers {
+        padding: 0 20px;
+        .diller {
+            &-counter {
+                display: inline-block;
+                float: none;
+                width: 3%;
+                vertical-align: top;
+            }
+            &-name {
+                display: inline-block;
+                float: none;
+                width: 30%;
+                vertical-align: top;
+            }
+            &-address {
+                display: inline-block;
+                float: none;
+                width: 25%;
+                vertical-align: top;
+            }
+            &-phone {
+                display: inline-block;
+                float: none;
+                width: 15%;
+                vertical-align: top;
+            }
+            &-site {
+                display: inline-block;
+                float: none;
+                width: 10%;
+                vertical-align: top;
+            }
+        }
+    }
+}
