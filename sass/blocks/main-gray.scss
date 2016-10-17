@@ -1,8 +1,15 @@
 @media #{$mobile} {
     .main-gray {
+//        display: none;
         padding-bottom: 0;
-        h2 {
-            padding: 0 10px;
+        padding-top: 20px;
+        background: transparent;
+        .h2-border, 
+        h2,
+        .gray-text,
+        .left,
+        .right {
+            display: none;
         }
         .gray-text {
             padding: 0 10px;
@@ -12,12 +19,13 @@
         }
         .left,
         .right {
-            display: inline-block;
-            float: none;
-            width: auto;
-            padding: 0 10px;
+//            display: inline-block;
+//            float: none;
+//            width: auto;
+//            padding: 0 10px;
         }
         .triggers {
+            display: none;
             position: static;
             width: auto;
             height: auto;

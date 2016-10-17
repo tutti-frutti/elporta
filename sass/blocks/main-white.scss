@@ -7,11 +7,18 @@
     .white-category {
         display: inline-block;
         float: none;
+        width: 100%;
         margin-right: 0;
+        margin: 15px 0;
         border-right: none;
-        padding: 20px;
+        padding: 0;
         h2 {
             width: 170px!important;
+            padding-left: 10px;
+            text-align: left;
+        }
+        .white-price-right {
+            display: none;
         }
     }
   }

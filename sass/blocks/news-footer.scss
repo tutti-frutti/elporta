@@ -1,8 +1,12 @@
 @media #{$mobile} {
     .news-footer {
+        display: flex;
+        flex-wrap: wrap;
         text-align: center;
         form {
-            display: block;
+            order: 2;
+            margin: auto;
+//            display: block;
             float: none;
             margin-bottom: 15px;
         }
@@ -12,14 +16,19 @@
             float: none;
         }
         .subscribe-text {
-            margin-bottom: 10px;
+            margin: 10px 0;
+            padding: 0;
         }
         input {
+            display: block;
             margin-right: 0;
+            margin-bottom: 15px;
         }
     }
     .pagination {
 	    float: none;
+        margin: auto;
+        order: 1;    
         span {
             margin-right: 0;
             font-size: 12px;

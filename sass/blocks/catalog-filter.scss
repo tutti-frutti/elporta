@@ -6,6 +6,7 @@
         .catalog {
             margin-top: 20px;
             ul {
+                display: none;
                 padding-left: 10px;
                 margin-bottom: 0;
             }
@@ -13,11 +14,23 @@
                 display: inline-block;
             }
             .subtitle {
-                margin-bottom: 10px;
+                display: none;
+                margin-bottom: 20px;
             }
             .selectbox-products {
-	            display: inline-block;
+	            display: block;
+                width: 95%;
                 padding-right: 0;
+                .dropdown {
+                    li {
+                        margin: 10px 5px 11px !important;
+                    }
+                } 
+            }
+            .h2-border + {
+                .subtitle {
+                    display: block;
+                }
             }
         }
     }

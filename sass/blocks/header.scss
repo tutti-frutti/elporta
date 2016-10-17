@@ -1,7 +1,8 @@
 @media #{$mobile} {
     .wrapper {
         .h2 {
-            text-align: center;
+            text-align: left;
+            padding-left: 10px;
         }
     }
     .header {

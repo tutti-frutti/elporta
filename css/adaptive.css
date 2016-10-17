@@ -24,9 +24,14 @@
       .main-black .left img,
       .main-black .right img {
         margin: 0 auto; }
+      .main-black .left h1,
+      .main-black .right h1 {
+        font-size: 28px; }
+      .main-black .left .button-products,
+      .main-black .right .button-products {
+        margin: 20px 0; }
     .main-black .right {
-      height: initial;
-      line-height: 0; }
+      display: none; }
     .main-black .main-menu {
       width: auto;
       text-align: center; }
@@ -66,11 +71,17 @@
     .main-white .white-category {
       display: inline-block;
       float: none;
+      width: 100%;
       margin-right: 0;
+      margin: 15px 0;
       border-right: none;
-      padding: 20px; }
+      padding: 0; }
       .main-white .white-category h2 {
-        width: 170px !important; } }
+        width: 170px !important;
+        padding-left: 10px;
+        text-align: left; }
+      .main-white .white-category .white-price-right {
+        display: none; } }
 
 @media (min-width: 768px) and (max-width: 1025px) {
   .main-white {
@@ -83,20 +94,21 @@
 
 @media (max-width: 767px) {
   .main-gray {
-    padding-bottom: 0; }
-    .main-gray h2 {
-      padding: 0 10px; }
+    padding-bottom: 0;
+    padding-top: 20px;
+    background: transparent; }
+    .main-gray .h2-border,
+    .main-gray h2,
+    .main-gray .gray-text,
+    .main-gray .left,
+    .main-gray .right {
+      display: none; }
     .main-gray .gray-text {
       padding: 0 10px; }
     .main-gray .gray-cta {
       margin: 30px 0; }
-    .main-gray .left,
-    .main-gray .right {
-      display: inline-block;
-      float: none;
-      width: auto;
-      padding: 0 10px; }
     .main-gray .triggers {
+      display: none;
       position: static;
       width: auto;
       height: auto;
@@ -137,16 +149,21 @@
 
 @media (max-width: 767px) {
   .main-news {
-    padding-top: 50px; }
+    padding-top: 0px; }
     .main-news .all-news-btn {
-      margin-bottom: 10px; }
+      margin-bottom: 20px; }
+    .main-news .h2 {
+      margin: 15px 0; }
     .main-news .news-arrows {
-      right: 10px; }
+      display: none; }
     .main-news .news-on-main .new {
       display: block;
       float: none;
-      width: auto;
-      padding: 0 10px; } }
+      width: 90%;
+      padding: 0 10px; }
+    .main-news .news-on-main .title {
+      height: 20px;
+      margin: 15px 0 0; } }
 
 @media (min-width: 768px) and (max-width: 1025px) {
   .main-news {
@@ -161,7 +178,8 @@
 
 @media (max-width: 767px) {
   .wrapper .h2 {
-    text-align: center; }
+    text-align: left;
+    padding-left: 10px; }
   .header {
     padding-top: 10px; }
     .header .phone,
@@ -292,9 +310,12 @@
 
 @media (max-width: 767px) {
   .news-footer {
+    display: flex;
+    flex-wrap: wrap;
     text-align: center; }
     .news-footer form {
-      display: block;
+      order: 2;
+      margin: auto;
       float: none;
       margin-bottom: 15px; }
     .news-footer .subscribe-text,
@@ -302,11 +323,16 @@
     .news-footer button {
       float: none; }
     .news-footer .subscribe-text {
-      margin-bottom: 10px; }
+      margin: 10px 0;
+      padding: 0; }
     .news-footer input {
-      margin-right: 0; }
+      display: block;
+      margin-right: 0;
+      margin-bottom: 15px; }
   .pagination {
-    float: none; }
+    float: none;
+    margin: auto;
+    order: 1; }
     .pagination span {
       margin-right: 0;
       font-size: 12px; } }
@@ -558,15 +584,22 @@
     .category-left .catalog {
       margin-top: 20px; }
       .category-left .catalog ul {
+        display: none;
         padding-left: 10px;
         margin-bottom: 0; }
       .category-left .catalog li {
         display: inline-block; }
       .category-left .catalog .subtitle {
-        margin-bottom: 10px; }
+        display: none;
+        margin-bottom: 20px; }
       .category-left .catalog .selectbox-products {
-        display: inline-block;
+        display: block;
+        width: 95%;
         padding-right: 0; }
+        .category-left .catalog .selectbox-products .dropdown li {
+          margin: 10px 5px 11px !important; }
+      .category-left .catalog .h2-border + .subtitle {
+        display: block; }
   .category-right {
     width: auto;
     float: none;
