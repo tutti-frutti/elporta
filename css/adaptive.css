@@ -1,7 +1,57 @@
 @media (max-width: 767px) {
   .main-black {
+    position: relative;
     height: auto;
     overflow: visible; }
+    .main-black .b-hamburger {
+      display: inline-block;
+      position: fixed;
+      width: 35px;
+      height: 35px;
+      top: 10px;
+      right: 20px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background: transparent;
+      z-index: 150; }
+      .main-black .b-hamburger span {
+        position: absolute;
+        display: block;
+        width: 23px;
+        height: 2px;
+        font-size: 0;
+        background: #a7a7a7; }
+        .main-black .b-hamburger span.active {
+          background: transparent; }
+        .main-black .b-hamburger span::before {
+          position: absolute;
+          content: '';
+          top: -5px;
+          left: 0;
+          width: 23px;
+          height: 2px;
+          background: #a7a7a7;
+          transition: .3s; }
+        .main-black .b-hamburger span.active::before {
+          transform: rotate(-45deg) translate(1px, 6px);
+          top: -4px;
+          left: 1px;
+          width: 22px;
+          background: #a8a8a8; }
+        .main-black .b-hamburger span::after {
+          position: absolute;
+          content: '';
+          top: 5px;
+          left: 0;
+          width: 23px;
+          height: 2px;
+          background: #a7a7a7;
+          transition: .3s; }
+        .main-black .b-hamburger span.active::after {
+          transform: rotate(45deg) translate(0px, -8px);
+          width: 22px;
+          background: #a8a8a8; }
     .main-black .container {
       max-width: 951px; }
     .main-black .main-header {
@@ -33,17 +83,32 @@
     .main-black .right {
       display: none; }
     .main-black .main-menu {
-      width: auto;
-      text-align: center; }
-      .main-black .main-menu ul li {
-        display: inline-block;
-        float: none;
-        margin: 0 5px 10px 5px; }
-      .main-black .main-menu ul li.devider {
-        width: 0;
-        margin: 0; } }
+      position: fixed;
+      display: none;
+      width: 280px;
+      height: 100%;
+      top: 10px;
+      right: 0;
+      text-align: center;
+      border: 1px solid #3e3e3e;
+      border-right: none;
+      background: #333;
+      z-index: 100; }
+      .main-black .main-menu ul {
+        margin-top: 20px; }
+        .main-black .main-menu ul li {
+          display: block;
+          float: none;
+          margin: 13px 5px; }
+        .main-black .main-menu ul li.devider {
+          width: 0;
+          margin: 0; }
+      .main-black .main-menu.active-m {
+        display: block; } }
 
 @media (min-width: 768px) and (max-width: 1025px) {
+  .main-black .b-hamburger {
+    display: none; }
   .main-black .phone {
     width: 30%;
     padding-left: 10px; }
@@ -62,6 +127,9 @@
       position: absolute;
       left: 0;
       bottom: 0; } }
+
+.b-hamburger {
+  display: none; }
 
 @media (max-width: 767px) {
   .main-white {
